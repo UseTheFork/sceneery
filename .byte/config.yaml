@@ -1,0 +1,72 @@
+app: {}
+boot:
+  read_only_files: []
+  editable_files: []
+cli:
+  ui_theme: mocha
+  syntax_theme: monokai
+edit_format:
+  enable_shell_commands: false
+  mask_message_count: 1
+files:
+  watch:
+    enable: true
+  ignore:
+  - .byte/cache
+  - .ruff_cache
+  - .idea
+  - .venv
+  - .env
+  - .git
+  - .pytest_cache
+  - __pycache__
+  - node_modules
+  - dist
+git:
+  enable_scopes: false
+  enable_breaking_changes: true
+  enable_body: true
+  scopes:
+  - api
+  - auth
+  - cli
+  - config
+  - core
+  - db
+  - deps
+  - docs
+  - test
+  - ui
+  description_guidelines: []
+  max_description_length: 72
+lint:
+  enable: false
+  commands: []
+llm:
+  main_model:
+    model: ''
+    extra_params: {}
+  weak_model:
+    model: ''
+    extra_params: {}
+  providers:
+    gemini:
+      enable: false
+      extra_params: {}
+    anthropic:
+      enable: false
+      extra_params: {}
+    openai:
+      enable: false
+      extra_params: {}
+lsp:
+  enable: false
+  timeout: 30
+  servers: {}
+presets: []
+system:
+  paths: {}
+web:
+  enable: true
+  chrome_binary_location: /etc/profiles/per-user/sincore/bin/google-chrome-stable
+version: 1.0.0
