@@ -44,10 +44,19 @@ We've decided on a **Hybrid Approach**:
 - [x] Updated flake.nix with proper Android SDK setup using `androidenv`
 - [x] Removed Android Studio from dependencies
 - [x] Configured Android SDK with API 34 and Build Tools 34.0.0
+- [x] Add React Native CLI to dependencies
+- [x] Generated justfile with common development commands
+- [x] Created minimal DreamService wrapper code (SceneeryDreamService.kt)
+- [x] Created AndroidManifest.xml configuration for DreamService
+- [x] Initialized React Native project structure with proper configs
 
 ### TODO
 
-- [ ] Add React Native CLI to dependencies
+- [ ] Run `yarn install` to install dependencies
+- [ ] Create gradle build files for Android
+- [ ] Create MainActivity.kt for settings/configuration
+- [ ] Create MainApplication.kt for React Native initialization
+- [ ] Test on device
 
 ## Technical Notes
 

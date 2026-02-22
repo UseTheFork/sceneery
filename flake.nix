@@ -66,6 +66,7 @@
                 ];
 
                 shellHook = ''
+                  export NIXPKGS_ACCEPT_ANDROID_SDK_LICENSE=1
                   export ANDROID_HOME="${androidSdk}/libexec/android-sdk"                            
                   export PATH=$PATH:$ANDROID_HOME/platform-tools                                     
                   export PATH=$PATH:$ANDROID_HOME/build-tools/34.0.0                                 

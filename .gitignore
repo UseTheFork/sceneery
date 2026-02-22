@@ -1,6 +1,7 @@
 .history*
 .direnv*
 
+# Android
 /build/
 /idea/
 *.iml
@@ -15,6 +16,26 @@ local.properties
 *.so
 *.o
 *.a
+android/build/
+android/.gradle/
+android/app/build/
+
+# React Native
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.expo/
+.expo-shared/
+
+# Metro
+.metro-health-check*
+
+# Environment
 .env
+.env.local
+
+# Byte
 .byte/cache/*
 .byte/session_context/*
+
